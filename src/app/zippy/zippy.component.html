@@ -5,6 +5,13 @@
     (click)="toggle()"
     >
         {{ title }}
+        <span class="glyphicon"
+        [ngClass]="{ 
+            'glyphicon-chevron-up': isExpanded,
+            'glyphicon-chevron-down': !isExpanded
+        }"
+        >
+        </span>
     </div>
     <div *ngIf="isExpanded" class="zippy-body">
         <ng-content></ng-content>
