@@ -11,4 +11,8 @@ export class ZippyComponent {
 @Input('title') title: string;
 isExpanded: boolean = true; 
 
+onClick(){
+  this.isExpanded = !this.isExpanded;
+}
+
 }
