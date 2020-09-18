@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 
 @Component({
@@ -9,5 +9,6 @@ import { Component, Input } from '@angular/core';
 export class ZippyComponent {
 
 @Input('title') title: string;
+isExpanded: boolean = true; 
 
 }
